@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Login System STUDENT</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css'>
+<link rel="stylesheet" href="../static/css/style_login.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<ul class="font">
+	<a class="bg-primary text-white" style="text-align:center">STUDENT</a>
+</ul>
+<nav class="main-nav">
+	
+
+	<ul>
+		<li><a class="signin" href="#0">SIGN IN</a></li>
+		<li><a class="signup" href="#0">SIGN UP</a></li>
+	</ul>
+</nav>
+
+<div class="user-modal">
+	
+		<div class="user-modal-container">
+			<br>
+			<p style="text-align:center">
+				<strong>STUDENT</strong>
+			</p>
+			<br>
+			<ul class="switcher">
+				<li><a href="#0">Sign in</a></li>
+				<li><a href="#0">New account</a></li>
+			</ul>
+
+			<div id="login">
+				<form class="form"  >
+					<p class="fieldset">
+						<label class="image-replace email" for="signin-email">E-mail</label>
+						<input class="full-width has-padding has-border" id="signin-email" type="email" placeholder="E-mail">
+						<span class="error-message">An account with this email address does not exist!</span>
+					</p>
+
+					<p class="fieldset">
+						<label class="image-replace password" for="signin-password">Password</label>
+						<input class="full-width has-padding has-border" id="signin-password" type="password"  placeholder="Password">
+						<a href="#0" class="hide-password">Show</a>
+						<span class="error-message">Wrong password! Try again.</span>
+					</p>
+
+					<p class="fieldset">
+						<input type="checkbox" id="remember-me" checked>
+						<label for="remember-me">Remember me</label>
+					</p>
+
+					<p class="fieldset">
+						<input class="full-width" type="submit" value="Login">
+					</p>
+				</form>
+				
+				<p class="form-bottom-message"><a href="#0">Forgot your password?</a></p>
+				<!-- <a href="#0" class="close-form">Close</a> -->
+			</div>
+
+			<div id="signup">
+				<form class="form">
+					<p class="fieldset">
+						<label class="image-replace username" for="signup-firstname">First Name</label>
+						<input class="full-width has-padding has-border" id="signup-firstname" type="text" placeholder="First name">
+						<span class="error-message">Your first name can only contain numeric and alphabetic symbols!</span>
+					</p>
+					<p class="fieldset">
+						<label class="image-replace username" for="signup-lastname">Last Name</label>
+						<input class="full-width has-padding has-border" id="signup-lastname" type="text" placeholder="Last name">
+						<span class="error-message">Your last name can only contain numeric and alphabetic symbols!</span>
+					</p>
+					<p class="fieldset">
+						<input class="full-width has-padding has-border" id="signup-studentid" type="studentid" placeholder="Student ID">
+						<span class="error-message">Enter a valid your student ID!</span>
+					</p>
+					<p class="fieldset">
+						<input class="full-width has-padding has-border" id="signup-department" type="text" placeholder="Department">
+						<span class="error-message">Enter a valid your department!</span>
+					</p>
+
+					<p class="fieldset">
+						<input class="full-width has-padding has-border" id="signup-major" type="major" placeholder="Major">
+						<span class="error-message">Enter a valid your Major!</span>
+					</p>
+					<p class="fieldset">
+						<label class="image-replace phone" for="signup-phone">Phone</label>
+						<input class="full-width has-padding has-border" id="signup-phone" type="phone" placeholder="Phone 0xx-xxx-xxx">
+						<span class="error-message">Enter a valid your phone!</span>
+					</p>
+					<p class="fieldset">
+						<label class="image-replace email" for="signup-email">E-mail</label>
+						<input class="full-width has-padding has-border" id="signup-email" type="email" placeholder="E-mail">
+						<span class="error-message">Enter a valid email address!</span>
+					</p>
+
+					<p class="fieldset">
+						<label class="image-replace password" for="signup-password">Password</label>
+						<input class="full-width has-padding has-border" id="signup-password" type="password"  placeholder="Password">
+						<a href="#0" class="hide-password">Show</a>
+						<span class="error-message">Your password has to be at least 6 characters long!</span>
+					</p>
+
+					<p class="fieldset">
+						<input type="checkbox" id="accept-terms">
+						<label for="accept-terms">I agree to the <a class="accept-terms" href="#0">Terms</a></label>
+					</p>
+
+					<p class="fieldset">
+						<input class="full-width has-padding" type="submit" value="Create account">
+					</p>
+				</form>
+				<div id="completion-message" class="hidden">
+					<p>Complete!</p>
+				</div>
+
+				<!-- <a href="#0" class="cd-close-form">Close</a> -->
+			</div>
+
+			<div id="reset-password">
+				<p class="form-message">Lost your password? Please enter your email address.</br> You will receive a link to create a new password.</p>
+
+				<form class="form">
+					<p class="fieldset">
+						<label class="image-replace email" for="reset-email">E-mail</label>
+						<input class="full-width has-padding has-border" id="reset-email" type="email" placeholder="E-mail">
+						<span class="error-message">An account with this email does not exist!</span>
+					</p>
+
+					<p class="fieldset">
+						<input class="full-width has-padding" type="submit" value="Reset password">
+					</p>
+				</form>
+
+				<p class="form-bottom-message"><a href="#0">Back to log-in</a></p>
+			</div>
+			<a href="#0" class="close-form">Close</a>
+		</div>
+	</div>
+	<nav class="home">
+		<a href="index_login.html" target="_blank">Back to Home</a>
+	</nav>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="../static/js/login.js"></script>
+
+</body>
+</html>

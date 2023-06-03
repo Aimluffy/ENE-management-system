@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="shortcut icon" type="png" href="images/icon/favicon.png">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Comaptible" content="IE=edge">
+	<title>LearnEd</title>
+	<meta name="desciption" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="static/js/script.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">
+	<script>
+		$(window).on('scroll', function(){
+  			if($(window).scrollTop()){
+  			  $('nav').addClass('black');
+ 			 }else {
+ 		   $('nav').removeClass('black');
+ 		 }
+		})
+	</script>
+</head>
+<body>
+<!-- Navigation Bar -->
+	<header id="header">
+		<nav>
+			<div class="logo"><img src="static/images/icon/logo_kmutt.png" alt="logo" style="width: 66px; height: 75;"></div>
+			<ul>
+				<li><a class="active" href="#">Home</a></li>				
+				<li><a class="study-sh" href="#">About &dtrif;</a>
+					<ul>
+						<li><a href="templates/staff.html">Staff</a></li>
+						<li><a href="#">Document</a></li>
+						
+						<li><a href="#">Trainee</a></li>
+					  </ul>
+				</li>
+				<li><a class="study-sh" href="#">Courses &dtrif;</a>
+					<ul>
+						<li><a href="templates/gen.html">GEN</a></li>
+						<li><a href="templates/lng.html">LNG</a></li>
+						
+						<li><a href="templates/ene.html">ENE</a></li>
+					  </ul>
+				</li>
+				
+				<li><a href="activity/choose_mode_activity.html">Activity</a></li>
+				<li><a href="petition/petition.html">Petition Form</a></li>
+				<li><a href="activity/choose_mode_link.html">Link</a></li>
+			</ul>
+			<a class="get-started" href="/templates/index_login.html">Log out</a>
+			<img src="static/images/icon/menu.png" class="menu" onclick="sideMenu(0)" alt="menu">
+		</nav>
+		<div class="head-container">
+			<div class="quote">
+				<p>Electronic and Telecommunication Management Systems</p>
+				
+				
+			</div>
+			
+		</div>
+		
+	</header>
+
+
+<!-- Some Popular Subjects -->
+	<div class="title">
+		<span>รายวิชาต่างๆ</span>
+	</div>
+	<br><br>
+	<div class="course">
+		<center><div class="cbox">
+		<div class="det"><a href="templates/gen.html"><img src="static/images/courses/book.png">GEN รายวิชาทั่วไป</a></div>
+		<div class="det"><a href="templates/lng.html"><img src="static/images/courses/d1.png">LNG รายวิชาภาษา</a></div>
+		</center>
+		<div class="cbox">
+		<div class="det"><a href="templates/ene.html"><img src="static/images/courses/computer.png">ENE รายวิชาภาค</a></div>
+		
+		</div>
+	</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+	<script>
+		$('.study-sh').click(function(){
+			$('nav ul .study-show').toggleClass("show");
+		
+		});
+	</script>
+
+</body>
+</html>

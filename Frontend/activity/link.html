@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>เว็บไซต์ของฉัน</title>
+<link rel="stylesheet" href="../static/css/activity_style.css">
+
+    <script>
+        function showUpdateForm() {
+        var formUpdate = document.getElementById("formUpdate");
+        var formView = document.getElementById("formView");
+
+        formUpdate.style.display = "block";
+        formView.style.display = "none";
+        }
+    </script>
+    <nav>
+        <div class="logo"><img src="../static/images/icon/logo_kmutt.png" alt="logo" style="width: 66px; height: 75;"></div>
+        <ul>
+        <li><a class="active" href="../index.html">Home</a></li>				
+        <li><a class="study-sh" href="#">About &dtrif;</a>
+            <ul>
+            <li><a href="/templates/staff.html">Staff</a></li>
+            <li><a href="/templates/add_re.html">Document</a></li>
+            
+            <li><a href="/templates/internship.html">Internship</a></li>
+            </ul>
+        </li>
+        <li><a class="study-sh" href="#">Courses &dtrif;</a>
+            <ul>
+            <li><a href="../templates/gen.html">GEN</a></li>
+            <li><a href="../templates/lng.html">LNG</a></li>
+            
+            <li><a href="../templates/ene.html">ENE</a></li>
+            </ul>
+        </li>
+        
+        <li><a href="../activity/choose_mode_activity.html">Activity</a></li>
+        <li><a href="../petition/petition.html">Petition Form</a></li>
+        <li><a href="../activity/choose_mode_link.html">Link</a></li>
+        </ul>
+        <a class="get-started" href="../templates/index_login.html">Log Out</a>
+        <img src="../static/images/icon/menu.png" class="menu" onclick="sideMenu(0)" alt="menu">
+    </nav>
+</head>
+
+<body>
+<!-- <nav>
+    <ul>
+    <li><a href="../index.html">กลับไปยังหน้าหลัก</a></li>
+    </ul>
+</nav> -->
+
+<div class="container">
+    <div class="form-container">
+        <h2>แบบฟอร์มอัปเดตลิงค์เรียน</h2>
+        <div id="formView">
+            <form action="#" method="POST">
+            <label for="activity">หัวข้อ:</label>
+            <input type="text" id="activity" name="activity" required>
+
+            <label for="description">รายละเอียด:</label>
+            <textarea id="description" name="description" rows="4" required></textarea>
+            
+            <label for="updateType">เลือกชั้นปี:</label>
+            <select id="updateType" name="updateType" required>
+                <option value="">กรุณาเลือกชั้นปี</option>
+                <option value="Type 1">ชั้นปีที่ 1</option>
+                <option value="Type 2">ชั้นปีที่ 2</option>
+                <option value="Type 3">ชั้นปีที่ 3</option>
+                <option value="Type 4">ชั้นปีที่ 4</option>
+            </select>
+
+            <label for="updateType">หลักสูตร:</label>
+            <select id="updateType" name="updateType" required>
+                <option value="">กรุณาเลือกชั้นปี</option>
+                <option value="Type 1">ภาคปกติ</option>
+                <option value="Type 2">ภาคอินเตอร์</option>
+            </select>
+
+            <input type="submit" value="อัปเดตข้อมูล">
+            <input type="button" value="ยกเลิก" onclick="window.location.href='../index.html'">
+        </form>
+        </div>
+        
+        </div>
+    </div>
+</div>
+<div class="back-to-home">
+    <button onclick="window.location.href='./choose_mode_link.html'">Back to Previous</button>
+</div>
+
+</body>
+
+</html>

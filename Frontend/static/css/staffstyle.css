@@ -1,0 +1,257 @@
+
+* {
+  margin: 0;
+}
+.staff{
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    background-color: #fbf3ed;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px 2px rgb(0 0 0 / 10%);
+    transition: all 0.5s ease;
+    height: 200px; 
+    padding: 50px;
+}
+.image-card-component {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px 2px rgb(0 0 0 / 10%);
+  transition: all 0.5s ease;
+  height: 200px;
+}
+.image {
+    width: 200px;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    border-radius: 8px 0 0 8px;
+    
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    flex: 1;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    width: 600px;
+    height: 200px;
+}
+
+/* !    Navvvvvvvvvvvvvvvvvvvvv */
+nav {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	top: 0;
+	position: fixed;
+	display: flex;
+	width: 100%;
+	z-index: 1000;
+	background: #fff;
+	justify-content: space-around;
+	transition: 1.5s;
+	align-items: center;
+}
+nav ul {
+	display: flex;
+	align-items: center;
+}
+nav ul li {
+	list-style: none;
+	margin: 5px 10px;
+}
+nav ul li a {
+	padding: 2px 10px;
+	color: #2e2e2e;
+	cursor: pointer;
+	transition: 0.5s;
+	text-decoration: none;
+}
+nav ul li a:hover {
+	color: #fff;
+	border-radius: 5px;
+	background: #E38B29;
+}
+nav ul li ul {
+	visibility: hidden;
+	opacity: 0;
+	position: absolute;
+	padding-left: 0;
+	left: 50;
+	top: 80%;
+	display: block;
+	background: white;
+  }
+nav ul li:hover > ul,
+nav ul li ul:hover {
+	visibility: visible;
+	opacity: 1;
+	display: block;
+	min-width: 85px;
+	text-align: left;
+	padding-top: 0px;
+	box-shadow: 0px 3px 5px -1px #ccc;
+  }
+
+nav ul li ul li {
+	clear: both;
+	width: 100%;
+	text-align: left;
+	margin-bottom: 20px;
+	border-style: none;
+  }
+
+nav ul li ul li a:hover {
+	padding-left: 10px;
+	border-left: 2px solid #3ca0e7;
+	transition: all 0.3s ease;
+  }
+
+
+.active {
+	color: #fff;
+	border-radius: 5px;
+	background: #E38B29;
+}
+.get-started {
+	margin-left: 50px;
+	padding: 5px 20px;
+	border: 2px solid #E38B29;
+	border-radius: 20px;
+	text-decoration: none;
+	
+	transition: .5s;
+	background-color: #E38B29;
+	color: #fff;
+}
+
+.menu {
+
+	width: 25px;
+
+}
+
+/* !nav--------------------------------------------*/
+
+
+
+
+
+
+
+
+
+.content-text {
+      margin-right: 60px;
+}
+
+.content-text h4 {
+      margin: 0 0 15px;
+      font-size: 20px;
+      line-height: 20px;
+      font-weight: 700;
+      color: #111;
+      transition: all 0.5s ease;
+}
+
+.content-text p {
+      margin: 0;
+      font-size: 14px;
+      line-height: 20px;
+      color: rgb(17 17 17 / 84%);
+      transition: all 0.5s ease;
+}
+
+@media screen and (max-width:920px) {
+    .staff {
+      flex-direction: column; 
+      height: 500px;
+      width: 80%;
+    }
+    .image-card-component{
+      flex-direction: column; 
+      height: 450px; 
+      width: 100%;
+    }
+    .content-text {
+        width: 100%;
+    }
+    .image{
+        position: sticky;
+        left: 35%;
+        padding-top: 20px;
+    }
+}
+@media screen and (max-width:620px) {
+    .staff{
+        flex-direction: column; 
+        height: 550px; 
+        width: 60%;
+      }
+    .image-card-component{
+      flex-direction: column; 
+      height: 500px;
+      width: 100%; 
+    }
+    .content-text {
+        width: 60%;
+    }
+    .image{
+        position: sticky;
+        left: 35%;
+        padding-top: 20px;
+    }
+}
+@media screen and (max-width:560px) {
+    .staff{
+        flex-direction: column; 
+        height: 600px; 
+        width: 60%;
+      }
+    .image-card-component{
+      flex-direction: column; 
+      height: 550px; 
+      width: 100%;
+    }
+    .content-text {
+        width:50%;
+    }
+    .image{
+        position: sticky;
+        left: 30%;
+        padding-top: 20px;
+    }
+}
+
+  section {
+    width: 33vw;
+    margin: 0 auto;
+  }
+  #message {
+    text-align: center;
+    color: inherit;
+    opacity: 75%;
+    mix-blend-mode: difference;
+    font-family: Cooper Black, Helvetica, Arial;
+    padding-top: 150px;
+    padding-bottom: 50px;
+  }
+  h1 {
+    font-size: 4.69em;
+  }
+  h1 {
+    font-size: 3.5em;
+  }
+  #message2 {
+    text-align: center;
+    color: inherit;
+    opacity: 75%;
+    mix-blend-mode: difference;
+    font-family: Cooper Black, Helvetica, Arial;
+    padding-bottom: 50px;
+  }

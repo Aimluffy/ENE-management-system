@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Petition Page</title>
+  <link rel="stylesheet" type="text/css" href="../static/css/petition.css">
+</head>
+<body>
+  
+  <header>
+		<nav>
+			<div class="logo"><img src="../static/images/icon/logo_kmutt.png" alt="logo" style="width: 66px; height: 75;"></div>
+			<ul>
+				<li><a class="active" href="../index.html">Home</a></li>				
+				<li><a class="study-sh" href="#">About &dtrif;</a>
+					<ul>
+						<li><a href="../templates/staff.html">Staff</a></li>
+						<li><a href="../templates/add_re.html">Document</a></li>
+						
+						<li><a href="../templates/internship.html">Internship</a></li>
+					  </ul>
+				</li>
+				<li><a class="study-sh" href="#">Courses &dtrif;</a>
+					<ul>
+						<li><a href="../templates/gen.html">GEN</a></li>
+						<li><a href="../templates/lng.html">LNG</a></li>
+						
+						<li><a href="../templates/ene.html">ENE</a></li>
+					  </ul>
+				</li>
+				
+				<li><a href="../activity/choose_mode_activity.html">Activity</a></li>
+    <li><a href="../petition/petition.html">Petition Form</a></li>
+    <li><a href="../activity/choose_mode_link.html">Link</a></li>
+			</ul>
+			<a class="get-started" href="../templates/index_login.html">Log out</a>
+			<img src="../static/images/icon/menu.png" class="menu" onclick="sideMenu(0)" alt="menu">
+		</nav>
+	</header>
+
+  <div class="container">
+    <h1>Sign the Petition</h1>
+    <form method="post" action="process_form.php">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="student-id">Student ID:</label>
+        <input type="text" id="student-id" name="student-id" required>
+      </div>
+      <div class="form-group">
+        <label for="advisor-name">Advisor Name:</label>
+        <input type="text" id="advisor-name" name="advisor-name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="file">File:</label>
+        <label class="file-upload-label" for="file">Choose File</label>
+        <input type="file" id="file" name="file">
+      </div>
+      <div class="form-group">
+        <label for="type-form">Type Form:</label>
+        <select id="type-form" name="type-form" required>
+          <option value="">Select Type</option>
+          <option value="RO01">RO01</option>
+          <option value="RO03">RO03</option>
+          <option value="RO04">RO04</option>
+          <option value="RO08">RO08</option>
+          <option value="RO11">RO11</option>
+          <option value="RO12">RO12</option>
+          <option value="RO13">RO13</option>
+          <option value="RO14">RO14</option>
+          <option value="RO15">RO15</option>
+          <option value="RO16">RO16</option>
+          <option value="RO18">RO18</option>
+          <option value="RO19">RO19</option>
+          <option value="RO20">RO20</option>
+          <option value="RO21">RO21</option>
+          <option value="RO22">RO22</option>
+          <option value="RO23">RO23</option>
+          <option value="RO25">RO25</option>
+          <option value="RO26">RO26</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="download-form-link">Download form here:</label>
+        <a href="https://regis-kmutt-ac-th.translate.goog/web/form/?_x_tr_sl=th&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=sc" target="_blank" class="download-form-link">Download Form</a>
+      </div>
+      <button class="submit-btn" type="submit">Submit</button>
+    </form>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

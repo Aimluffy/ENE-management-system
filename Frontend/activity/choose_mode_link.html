@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>เลือกการทำงาน</title>
+<style>
+    .container {
+    text-align: center;
+    margin-top: 270px;
+    }
+    .container h1 {
+        font-size: 25px;
+    }
+    button {
+    padding: 10px 20px;
+    font-size: 18px;
+    margin: 10px;
+    background-color: #F1A661;
+    border-color:lightgray;
+    }
+
+    .back-to-home {
+    margin-top: 20px;
+    text-align: center;
+    }
+
+    .back-to-home button {
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #337ab7;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    }
+    /* !    Navvvvvvvvvvvvvvvvvvvvv */
+    nav {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        top: 0;
+        position: fixed;
+        display: flex;
+        width: 100%;
+        z-index: 1000;
+        background: #fff;
+        justify-content: space-around;
+        transition: 1.5s;
+        align-items: center;
+    }
+    nav ul {
+        display: flex;
+        align-items: center;
+    }
+    nav ul li {
+        list-style: none;
+        margin: 5px 10px;
+    }
+    nav ul li a {
+        padding: 2px 10px;
+        color: #2e2e2e;
+        cursor: pointer;
+        transition: 0.5s;
+        text-decoration: none;
+    }
+    nav ul li a:hover {
+        color: #fff;
+        border-radius: 5px;
+        background: #E38B29;
+    }
+    nav ul li ul {
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        padding-left: 0;
+        left: 50;
+        top: 80%;
+        display: block;
+        background: white;
+    }
+    nav ul li:hover > ul,
+    nav ul li ul:hover {
+        visibility: visible;
+        opacity: 1;
+        display: block;
+        min-width: 85px;
+        text-align: left;
+        padding-top: 0px;
+        box-shadow: 0px 3px 5px -1px #ccc;
+    }
+
+    nav ul li ul li {
+        clear: both;
+        width: 100%;
+        text-align: left;
+        margin-bottom: 20px;
+        border-style: none;
+    }
+
+    nav ul li ul li a:hover {
+        padding-left: 10px;
+        border-left: 2px solid #3ca0e7;
+        transition: all 0.3s ease;
+    }
+
+
+    .active {
+        color: #fff;
+        border-radius: 5px;
+        background: #E38B29;
+    }
+    .get-started {
+        margin-left: 50px;
+        padding: 5px 20px;
+        border: 2px solid #E38B29;
+        border-radius: 20px;
+        text-decoration: none;
+        
+        transition: .5s;
+        background-color: #E38B29;
+        color: #fff;
+    }
+
+    .menu {
+
+        width: 25px;
+
+    }
+
+    /* !nav--------------------------------------------*/
+
+
+
+
+</style>
+<nav>
+    <div class="logo"><img src="../static/images/icon/logo_kmutt.png" alt="logo" style="width: 66px; height: 75;"></div>
+    <ul>
+      <li><a class="active" href="../index.html">Home</a></li>				
+      <li><a class="study-sh" href="#">About &dtrif;</a>
+        <ul>
+          <li><a href="/templates/staff.html">Staff</a></li>
+          <li><a href="/templates/add_re.html">Document</a></li>
+          
+          <li><a href="/templates/internship.html">Internship</a></li>
+          </ul>
+      </li>
+      <li><a class="study-sh" href="#">Courses &dtrif;</a>
+        <ul>
+          <li><a href="../templates/gen.html">GEN</a></li>
+          <li><a href="../templates/lng.html">LNG</a></li>
+          
+          <li><a href="../templates/ene.html">ENE</a></li>
+          </ul>
+      </li>
+      
+      <li><a href="../activity/choose_mode_activity.html">Activity</a></li>
+      <li><a href="../petition/petition.html">Petition Form</a></li>
+      <li><a href="../activity/choose_mode_link.html">Link</a></li>
+    </ul>
+    <a class="get-started" href="../templates/index_login.html">Log Out</a>
+    <img src="../static/images/icon/menu.png" class="menu" onclick="sideMenu(0)" alt="menu">
+  </nav>
+</head>
+<body>
+<div class="container">
+    <h1>เลือกการดำเนินงานลิงค์เรียน</h1>
+    <button onclick="window.location.href='./config_link.html'">เพิ่ม/ลบ/แก้ไข</button>
+    <button onclick="window.location.href='./link.html'">สร้างใหม่</button>
+</div>
+
+</body>
+</html>
